@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agent Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Banner Section -->
+  <section id="banner">
+    <div class="banner-slide active">
+      <img src="banner-2.jpg" alt="Banner 1">
+      <div class="banner-text">
+        <h1>Explore the World with Us</h1>
+        <p>Your dream vacation starts here.</p>
+      </div>
+    </div>
+    <div class="banner-slide">
+      <img src="banner-1.jpg" alt="Banner 2">
+      <div class="banner-text">
+        <h1>Discover New Destinations</h1>
+        <p>Adventure awaits you.</p>
+      </div>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </section>
+
+  <!-- Our Package Section -->
+  <section id="packages">
+    <h2>Our Travel Packages</h2>
+    <div class="package-list">
+      <div class="package-item">
+        <img src="beach.jpg" alt="Package 1">
+        <h3>Beach Getaway</h3>
+        <p>Relax on the best beaches in the world.</p>
+      </div>
+      <div class="package-item">
+        <img src="mountain.jpg" alt="Package 2">
+        <h3>Mountain Adventure</h3>
+        <p>Explore the highest peaks.</p>
+      </div>
+      <div class="package-item">
+        <img src="city.jpg" alt="Package 3">
+        <h3>City Tour</h3>
+        <p>Experience the culture of vibrant cities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call Action Section -->
+  <section id="call-action">
+    <h2>Contact Us</h2>
+    <p>Sales akan menghubungi Anda 1×24 jam setelah data kami terima.</p>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <input type="text" id="First and last name" placeholder="Your Name" required>
+      <input type="email" id="example@email.com" placeholder="Email Address:" required>
+      <input type="text" id="destination" placeholder="What Are You Interested In?" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
